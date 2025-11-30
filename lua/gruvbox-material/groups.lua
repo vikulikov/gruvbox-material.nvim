@@ -726,7 +726,7 @@ function groups.get(contrast)
         CmpItemAbbrDeprecated = { fg = colors.grey1, strikethrough = true, bg = colors.bg0 },
         CmpItemAbbrMatch = { fg = colors.purple, bold = true, bg = colors.bg0 },
         CmpItemAbbrMatchFuzzy = { link = "CmpItemAbbrMatch", bg = colors.bg0 },
-        CmpItemMenu = { fg = colors.grey2, bg = colors.bg0 },
+        CmpItemMenu = { fg = colors.grey2 },
         CmpItemKindField = { fg = colors.blue, bg = colors.bg0 },
         CmpItemKindProperty = { link = "CmpItemKindField", bg = colors.bg0 },
         CmpItemKindEvent = { link = "CmpItemKindField", bg = colors.bg0 },
