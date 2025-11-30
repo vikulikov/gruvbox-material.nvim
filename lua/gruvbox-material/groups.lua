@@ -160,7 +160,7 @@ function groups.get(contrast)
         Normal = { fg = colors.fg0, bg = colors.bg0 }, -- normal text
         NormalNC = { link = "Normal" },
         NormalFloat = { fg = colors.fg1, bg = colors.bg0 },
-        FloatBorder = { link = "NormalFloat", fg = colors.bg0 },
+        FloatBorder = { link = "NormalFloat" },
 
         Question = { fg = colors.yellow },                                -- hit-enter prompt and yes/no questions
 
@@ -748,10 +748,10 @@ function groups.get(contrast)
         CmpItemKindFolder = { link = "CmpItemKindUnit" },
         CmpItemKindMethod = { fg = colors.blue },
         CmpItemKindValue = { link = "CmpItemKindMethod" },
-        CmpItemKindEnumMember = { link = "CmpItemKindMethod", bg = colors.bg0 },
-        CmpItemKindInterface = { fg = colors.orange, bg = colors.bg0 },
-        CmpItemKindColor = { link = "CmpItemKindInterface", bg = colors.bg0 },
-        CmpItemKindTypeParameter = { link = "CmpItemKindInterface", bg = colors.bg0 },
+        CmpItemKindEnumMember = { link = "CmpItemKindMethod" },
+        CmpItemKindInterface = { fg = colors.orange },
+        CmpItemKindColor = { link = "CmpItemKindInterface" },
+        CmpItemKindTypeParameter = { link = "CmpItemKindInterface" },
 
         -- Saghen/blink.cmp
         BlinkCmpLabelMatch = { fg = colors.green, bold = true },
