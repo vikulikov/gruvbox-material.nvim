@@ -40,10 +40,10 @@ function groups.get(contrast)
         Success = { link = "Green" },
         Hint = { link = "Green" },
 
-        ErrorFloat = { fg = colors.red, bg = colors.bg3 },
-        WarningFloat = { fg = colors.yellow, bg = colors.bg3 },
-        InfoFloat = { fg = colors.blue, bg = colors.bg3 },
-        HintFloat = { fg = colors.green, bg = colors.bg3 },
+        ErrorFloat = { fg = colors.red, bg = colors.bg0 },
+        WarningFloat = { fg = colors.yellow, bg = colors.bg0 },
+        InfoFloat = { fg = colors.blue, bg = colors.bg0 },
+        HintFloat = { fg = colors.green, bg = colors.bg0 },
 
         ErrorText = { fg = colors.bg_visual_red, undercurl = true },
         WarningText = { fg = colors.bg_visual_yellow, undercurl = true },
@@ -68,48 +68,48 @@ function groups.get(contrast)
         BlueSign = { fg = colors.blue, bg = colors.bg2 },
         PurpleSign = { fg = colors.purple, bg = colors.bg2 },
 
-        Type = { fg = colors.yellow },                  -- int, long, char, etc.
-        Typedef = { fg = colors.red },                  -- A typedef
-        StorageClass = { fg = colors.orange },          -- static, register, volatile, etc.
-        Structure = { fg = colors.orange },             -- struct, union, enum, etc.
-        Constant = { fg = colors.aqua },                -- any constant
-        Character = { fg = colors.green },              -- any character constant: 'c', '\n'
-        Number = { fg = colors.purple },                -- a number constant: 5
-        Boolean = { fg = colors.purple },               -- a boolean constant: TRUE, false
-        Float = { fg = colors.purple },                 -- a floating point constant: 2.3e10
-        Statement = { fg = colors.red },                -- any statement
-        Label = { fg = colors.orange },                 -- case, default, etc.
-        Operator = { fg = colors.orange },              -- sizeof", "+", "*", etc.
-        Exception = { fg = colors.red },                -- try, catch, throw
-        PreProc = { fg = colors.purple },               -- generic Preprocessor
-        Include = { fg = colors.purple },               -- preprocessor #include
-        Define = { fg = colors.purple },                -- preprocessor #define
+        Type = { fg = colors.yellow },                      -- int, long, char, etc.
+        Typedef = { fg = colors.red },                      -- A typedef
+        StorageClass = { fg = colors.orange },              -- static, register, volatile, etc.
+        Structure = { fg = colors.orange },                 -- struct, union, enum, etc.
+        Constant = { fg = colors.aqua },                    -- any constant
+        Character = { fg = colors.green },                  -- any character constant: 'c', '\n'
+        Number = { fg = colors.purple },                    -- a number constant: 5
+        Boolean = { fg = colors.purple },                   -- a boolean constant: TRUE, false
+        Float = { fg = colors.purple },                     -- a floating point constant: 2.3e10
+        Statement = { fg = colors.red },                    -- any statement
+        Label = { fg = colors.orange },                     -- case, default, etc.
+        Operator = { fg = colors.orange },                  -- sizeof", "+", "*", etc.
+        Exception = { fg = colors.red },                    -- try, catch, throw
+        PreProc = { fg = colors.purple },                   -- generic Preprocessor
+        Include = { fg = colors.purple },                   -- preprocessor #include
+        Define = { fg = colors.purple },                    -- preprocessor #define
         Identifier = { fg = colors.blue },
-        Macro = { fg = colors.aqua },                   -- same as Define
-        PreCondit = { fg = colors.purple },             -- preprocessor #if, #else, #endif, etc.
-        Special = { fg = colors.yellow },               -- any special symbol
-        SpecialChar = { fg = colors.yellow },           -- special character in a constant
-        Function = { fg = colors.green },               -- special character in a constant
-        Tag = { fg = colors.orange },                   -- you can use CTRL-] on this
-        Delimiter = { fg = colors.fg0 },                -- character that needs attention like , or .
+        Macro = { fg = colors.aqua },                       -- same as Define
+        PreCondit = { fg = colors.purple },                 -- preprocessor #if, #else, #endif, etc.
+        Special = { fg = colors.yellow },                   -- any special symbol
+        SpecialChar = { fg = colors.yellow },               -- special character in a constant
+        Function = { fg = colors.green },                   -- special character in a constant
+        Tag = { fg = colors.orange },                       -- you can use CTRL-] on this
+        Delimiter = { fg = colors.fg0 },                    -- character that needs attention like , or .
         QuickFixLine = { fg = colors.purple, bold = true }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-        Debug = { fg = colors.orange },                 -- debugging statements
-        debucPC = { fg = colors.bg0, bg = colors.green }, -- the current position
-        debugBreakpoint = { fg = colors.bg0 },          -- a breakpoint
+        Debug = { fg = colors.orange },                     -- debugging statements
+        debucPC = { fg = colors.bg0, bg = colors.green },   -- the current position
+        debugBreakpoint = { fg = colors.bg0 },              -- a breakpoint
         ToolbarLine = { fg = colors.fg1, bg = colors.bg3 },
         ToolbarButton = { fg = colors.fg0, bg = colors.grey2 },
-        Underlined = { fg = colors.blue, underline = true }, -- text that stands out, HTML links
-        Ignore = { fg = colors.grey1 },                    -- left blank, hidden
+        Underlined = { fg = colors.blue, underline = true },   -- text that stands out, HTML links
+        Ignore = { fg = colors.grey1 },                        -- left blank, hidden
 
-        Comment = { fg = colors.grey1, italic = true },    -- any comments
+        Comment = { fg = colors.grey1, italic = true },        -- any comments
         SpecialComment = { fg = colors.grey1, italic = true }, -- special things inside a comment
-        Todo = { fg = colors.purple, italic = true },      -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+        Todo = { fg = colors.purple, italic = true },          -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
-        ColorColumn = { bg = colors.bg2 },                 --  used for the columns set with 'colorcolumn'
-        Conceal = { bg = colors.bg5 },                     -- placeholder characters substituted for concealed text (see 'conceallevel')
+        ColorColumn = { bg = colors.bg2 },                     --  used for the columns set with 'colorcolumn'
+        Conceal = { bg = colors.bg5 },                         -- placeholder characters substituted for concealed text (see 'conceallevel')
 
-        Cursor = { reverse = true },                       -- the character under the cursor
-        lCursor = { link = "Cursor" },                     -- the character under the cursor
+        Cursor = { reverse = true },                           -- the character under the cursor
+        lCursor = { link = "Cursor" },                         -- the character under the cursor
         CursorIM = { link = "Cursor" },
 
         WinBar = { bg = colors.bg0 },
@@ -119,66 +119,66 @@ function groups.get(contrast)
         CursorLineNr = { fg = colors.grey1 },
 
         -- Diff mode
-        DiffAdd = { bg = colors.bg_diff_green },         -- Added line
-        DiffChange = { bg = colors.bg_diff_blue },       --  Changed line
-        DiffDelete = { bg = colors.bg_diff_red },        -- Deleted line
-        DiffText = { fg = colors.bg0, bg = colors.blue }, -- Changed text within a changed line
+        DiffAdd = { bg = colors.bg_diff_green },             -- Added line
+        DiffChange = { bg = colors.bg_diff_blue },           --  Changed line
+        DiffDelete = { bg = colors.bg_diff_red },            -- Deleted line
+        DiffText = { fg = colors.bg0, bg = colors.blue },    -- Changed text within a changed line
 
-        EndOfBuffer = { fg = colors.bg5, bg = colors.bg0 }, -- filler lines (~) after the last line in the buffer
+        EndOfBuffer = { fg = colors.bg5, bg = colors.bg0 },  -- filler lines (~) after the last line in the buffer
 
-        VertSplit = { fg = colors.bg5 },                 -- the column separating vertically split windows
-        WinSeparator = { link = "VertSplit" },           -- replaces VertSplit in newer versions of Neovim
+        VertSplit = { fg = colors.bg5 },                     -- the column separating vertically split windows
+        WinSeparator = { link = "VertSplit" },               -- replaces VertSplit in newer versions of Neovim
 
-        Directory = { fg = colors.green },               -- directory names (and other special names in listings)
-        Folded = { fg = colors.grey1, bg = colors.bg2 }, -- line used for closed folds
+        Directory = { fg = colors.green },                   -- directory names (and other special names in listings)
+        Folded = { fg = colors.grey1, bg = colors.bg2 },     -- line used for closed folds
         FoldColumn = { fg = colors.grey1 },
-        SignColumn = { fg = colors.fg0 },                -- column where signs are displayed
+        SignColumn = { fg = colors.fg0 },                    -- column where signs are displayed
 
         IncSearch = { fg = colors.bg0, bg = colors.bg_red }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
-        Search = { fg = colors.bg0, bg = colors.bg_green }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
-        CurSearch = { link = "Search" },                 -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
-        LineNr = { fg = colors.bg5 },                    -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+        Search = { fg = colors.bg0, bg = colors.bg_green },  -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+        CurSearch = { link = "Search" },                     -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+        LineNr = { fg = colors.bg5 },                        -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 
-        ErrorMsg = { link = "Error" },                   -- error messages on the command line
-        WarningMsg = { fg = colors.yellow, bold = true }, --  warning messages
-        ModeMsg = { fg = colors.fg0, bold = true },      -- 'showmode' message (e.g., "-- INSERT --")
-        MoreMsg = { fg = colors.yellow, bold = true },   -- more-prompt
-        MatchParen = { bg = colors.bg4 },                -- The character under the cursor or just before it, if it is a paired bracket, and its match.
-        NonText = { fg = colors.bg5 },                   -- '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line).
-        Whitespace = { fg = colors.bg5 },                -- '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line).
-        SpecialKey = { fg = colors.bg5 },                -- Meta and special keys listed with ":map", also for text used to show unprintable characters in the text, 'listchars'. Generally: text that is displayed differently from what it really is.
-        Title = { fg = colors.orange, bold = true },     -- titles for output from ":set all", ":autocmd" etc.
+        ErrorMsg = { link = "Error" },                       -- error messages on the command line
+        WarningMsg = { fg = colors.yellow, bold = true },    --  warning messages
+        ModeMsg = { fg = colors.fg0, bold = true },          -- 'showmode' message (e.g., "-- INSERT --")
+        MoreMsg = { fg = colors.yellow, bold = true },       -- more-prompt
+        MatchParen = { bg = colors.bg4 },                    -- The character under the cursor or just before it, if it is a paired bracket, and its match.
+        NonText = { fg = colors.bg5 },                       -- '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line).
+        Whitespace = { fg = colors.bg5 },                    -- '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line).
+        SpecialKey = { fg = colors.bg5 },                    -- Meta and special keys listed with ":map", also for text used to show unprintable characters in the text, 'listchars'. Generally: text that is displayed differently from what it really is.
+        Title = { fg = colors.orange, bold = true },         -- titles for output from ":set all", ":autocmd" etc.
 
         -- Popup menu
-        Pmenu = { fg = colors.fg1, bg = colors.bg3 },  -- normal item
+        Pmenu = { fg = colors.fg1, bg = colors.bg3 },      -- normal item
         PmenuSel = { fg = colors.bg3, bg = colors.grey2 }, -- selected item
-        PmenuSbar = { bg = colors.bg3 },               -- scrollbar
-        PmenuThumb = { bg = colors.grey0 },            -- Thumb of the scrollbar
+        PmenuSbar = { bg = colors.bg3 },                   -- scrollbar
+        PmenuThumb = { bg = colors.grey0 },                -- Thumb of the scrollbar
         PmenuKind = { fg = colors.yellow, bg = colors.bg3 },
         PmenuExtra = { fg = colors.fg0, bg = colors.bg3 },
 
         Normal = { fg = colors.fg0, bg = colors.bg0 }, -- normal text
         NormalNC = { link = "Normal" },
-        NormalFloat = { fg = colors.fg1, bg = colors.bg3 },
-        FloatBorder = { link = "NormalFloat", fg = colors.bg5 },
+        NormalFloat = { fg = colors.fg1, bg = colors.bg0 },
+        FloatBorder = { link = "NormalFloat", fg = colors.bg0 },
 
-        Question = { fg = colors.yellow },                            -- hit-enter prompt and yes/no questions
+        Question = { fg = colors.yellow },                                -- hit-enter prompt and yes/no questions
 
-        SpellBad = { undercurl = true, sp = colors.red },             -- Word that is not recognized by the spellchecker. This will be combined with the highlighting used otherwise.
-        SpellCap = { undercurl = true, sp = colors.green },           -- Word that should start with a capital. This will be combined with the highlighting used otherwise.
-        SpellLocal = { undercurl = true, sp = colors.red },           -- Word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.
-        SpellRare = { undercurl = true, sp = colors.orange },         -- Word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.
+        SpellBad = { undercurl = true, sp = colors.red },                 -- Word that is not recognized by the spellchecker. This will be combined with the highlighting used otherwise.
+        SpellCap = { undercurl = true, sp = colors.green },               -- Word that should start with a capital. This will be combined with the highlighting used otherwise.
+        SpellLocal = { undercurl = true, sp = colors.red },               -- Word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.
+        SpellRare = { undercurl = true, sp = colors.orange },             -- Word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.
 
-        StatusLine = { fg = colors.fg1, bg = colors.bg_statusline1 }, -- status line of current window
-        StatusLineTerm = { link = "StatusLine" },                     -- status line of current :terminal window
+        StatusLine = { fg = colors.fg1, bg = colors.bg_statusline1 },     -- status line of current window
+        StatusLineTerm = { link = "StatusLine" },                         -- status line of current :terminal window
         StatusLineNC = { fg = colors.grey1, bg = colors.bg_statusline1 }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
-        StatusLineTermNC = { link = "StatusLineNC" },                 -- status line of non-current :terminal window
+        StatusLineTermNC = { link = "StatusLineNC" },                     -- status line of non-current :terminal window
         TabLine = { fg = colors.fg1, bg = colors.bg_statusline3 },
         TabLineFill = { fg = colors.fg1, bg = colors.bg_statusline1 },
         TabLineSel = { fg = colors.bg0, bg = colors.grey2 },
 
-        Visual = { bg = colors.bg3 }, -- Visual mode selection
-        VisualNOS = { link = "Visual" }, -- Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
+        Visual = { bg = colors.bg3 },     -- Visual mode selection
+        VisualNOS = { link = "Visual" },  -- Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
         WildMenu = { link = "PmenuSel" }, --  current match in 'wildmenu' completion
 
         -------------------------
@@ -186,34 +186,34 @@ function groups.get(contrast)
         -------------------------
 
         -- LSP Groups (descriptions and ordering from `:h lsp-highlight`)
-        LspDiagnosticsDefaultError = { link = "ErrorText" },             -- used for "Error" diagnostic virtual text
-        LspDiagnosticsDefaultHint = { link = "HintText" },               -- used for "Hint" diagnostic virtual text
-        LspDiagnosticsDefaultInformation = { link = "InfoText" },        -- used for "Information" diagnostic virtual text
-        LspDiagnosticsDefaultWarning = { link = "WarningText" },         -- used for "Warning" diagnostic signs in sign column
+        LspDiagnosticsDefaultError = { link = "ErrorText" },                 -- used for "Error" diagnostic virtual text
+        LspDiagnosticsDefaultHint = { link = "HintText" },                   -- used for "Hint" diagnostic virtual text
+        LspDiagnosticsDefaultInformation = { link = "InfoText" },            -- used for "Information" diagnostic virtual text
+        LspDiagnosticsDefaultWarning = { link = "WarningText" },             -- used for "Warning" diagnostic signs in sign column
 
-        LspDiagnosticsSignError = { link = "RedSign" },                  -- used for "Error" diagnostic signs in sign column
-        LspDiagnosticsSignHint = { link = "AquaSign" },                  -- used for "Hint" diagnostic signs in sign column
-        LspDiagnosticsSignInformation = { link = "BlueSign" },           -- used for "Information" diagnostic signs in sign column
-        LspDiagnosticsSignWarning = { link = "YellowSign" },             -- used for "Warning" diagnostic signs in sign column
+        LspDiagnosticsSignError = { link = "RedSign" },                      -- used for "Error" diagnostic signs in sign column
+        LspDiagnosticsSignHint = { link = "AquaSign" },                      -- used for "Hint" diagnostic signs in sign column
+        LspDiagnosticsSignInformation = { link = "BlueSign" },               -- used for "Information" diagnostic signs in sign column
+        LspDiagnosticsSignWarning = { link = "YellowSign" },                 -- used for "Warning" diagnostic signs in sign column
 
-        LspDiagnosticsFloatingError = { link = "ErrorFloat" },           -- used for "Error" diagnostic messages in the diagnostics float
-        LspDiagnosticsFloatingHint = { link = "HintFloat" },             -- used for "Hint" diagnostic messages in the diagnostics float
-        LspDiagnosticsFloatingInformation = { link = "InfoFloat" },      -- used for "Information" diagnostic messages in the diagnostics float
-        LspDiagnosticsFloatingWarning = { link = "WarningFloat" },       -- used for "Warning" diagnostic messages in the diagnostics float
+        LspDiagnosticsFloatingError = { link = "ErrorFloat" },               -- used for "Error" diagnostic messages in the diagnostics float
+        LspDiagnosticsFloatingHint = { link = "HintFloat" },                 -- used for "Hint" diagnostic messages in the diagnostics float
+        LspDiagnosticsFloatingInformation = { link = "InfoFloat" },          -- used for "Information" diagnostic messages in the diagnostics float
+        LspDiagnosticsFloatingWarning = { link = "WarningFloat" },           -- used for "Warning" diagnostic messages in the diagnostics float
 
-        LspDiagnosticsVirtualTextError = { link = "VirtualTextError" },  -- Virtual text "Error"
-        LspDiagnosticsVirtualTextHint = { link = "VirtualTextHint" },    -- Virtual text "Hint"
+        LspDiagnosticsVirtualTextError = { link = "VirtualTextError" },      -- Virtual text "Error"
+        LspDiagnosticsVirtualTextHint = { link = "VirtualTextHint" },        -- Virtual text "Hint"
         LspDiagnosticsVirtualTextInformation = { link = "VirtualTextInfo" }, -- Virtual text "Information"
-        LspDiagntualTextWarning = { link = "VirtualTextWarning" },       -- Virtual text "Warning"
+        LspDiagntualTextWarning = { link = "VirtualTextWarning" },           -- Virtual text "Warning"
 
-        LspDiagnosticsUnderlineError = { link = "ErrorText" },           -- used to underline "Error" diagnostics.
-        LspDiagnosticsUnderlineHint = { link = "HintText" },             -- used to underline "Hint" diagnostics.
-        LspDiagnosticsUnderlineInformation = { link = "InfoText" },      -- used to underline "Information" diagnostics.
-        LspDiagnosticsUnderlineWarning = { link = "WarningText" },       -- used to underline "Warning" diagnostics.
+        LspDiagnosticsUnderlineError = { link = "ErrorText" },               -- used to underline "Error" diagnostics.
+        LspDiagnosticsUnderlineHint = { link = "HintText" },                 -- used to underline "Hint" diagnostics.
+        LspDiagnosticsUnderlineInformation = { link = "InfoText" },          -- used to underline "Information" diagnostics.
+        LspDiagnosticsUnderlineWarning = { link = "WarningText" },           -- used to underline "Warning" diagnostics.
 
-        LspReferenceRead = { link = "CurrentWord" },                     -- used for highlighting "read" references
-        LspReferenceText = { link = "CurrentWord" },                     -- used for highlighting "text" references
-        LspReferenceWrite = { link = "CurrentWord" },                    -- used for highlighting "write" references
+        LspReferenceRead = { link = "CurrentWord" },                         -- used for highlighting "read" references
+        LspReferenceText = { link = "CurrentWord" },                         -- used for highlighting "text" references
+        LspReferenceWrite = { link = "CurrentWord" },                        -- used for highlighting "write" references
 
         TermCursor = { link = "Cursor" },
         healthError = { link = "Error" },
@@ -365,49 +365,49 @@ function groups.get(contrast)
         TSComment = { link = "Comment" },
         TSConditional = { link = "Red" },
         TSConstBuiltin = { link = "Blue" }, -- For constant that are built in the language: `nil` in Lua.
-        TSConstMacro = { link = "Blue" }, -- For constants that are defined by macros: `NULL` in C.
-        TSConstant = { link = "Fg" },   -- For constants
+        TSConstMacro = { link = "Blue" },   -- For constants that are defined by macros: `NULL` in C.
+        TSConstant = { link = "Fg" },       -- For constants
         TSConstructor = { link = "Green" }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
         TSDanger = { fg = colors.bg0, bg = colors.red, bold = true },
         TSEmphasis = { bold = true },
-        TSError = { link = "Error" }, -- For syntax/parser errors.
-        TSException = { link = "Red" }, -- For exception related keywords.
-        TSField = { link = "Green" }, -- For fields.
-        TSFloat = { link = "Purple" }, -- For floats.
+        TSError = { link = "Error" },     -- For syntax/parser errors.
+        TSException = { link = "Red" },   -- For exception related keywords.
+        TSField = { link = "Green" },     -- For fields.
+        TSFloat = { link = "Purple" },    -- For floats.
         TSFuncBuiltin = { link = "Green" },
         TSFuncMacro = { link = "Green" }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
         TSFunction = { link = "Green" },
-        TSInclude = { link = "Red" }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
+        TSInclude = { link = "Red" },     -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
         TSKeyword = { link = "Red" },
         TSKeywordFunction = { link = "Red" },
         TSKeywordOperator = { link = "Orange" },
         TSLabel = { link = "Orange" }, -- For labels: `label:` in C and `:label:` in Lua.
         TSMath = { fg = "Blue" },
         TSMethod = { link = "Green" },
-        TSNamespace = { link = "Yellow" },  -- For identifiers referring to modules and namespaces.
+        TSNamespace = { link = "Yellow" },      -- For identifiers referring to modules and namespaces.
         TSNone = { link = "Fg" },
-        TSNumber = { link = "Purple" },     -- For all numbers
-        TSOperator = { link = "Orange" },   -- For any operator: `+`, but also `->` and `*` in C.
-        TSParameter = { link = "Fg" },      -- For parameters of a function.
+        TSNumber = { link = "Purple" },         -- For all numbers
+        TSOperator = { link = "Orange" },       -- For any operator: `+`, but also `->` and `*` in C.
+        TSParameter = { link = "Fg" },          -- For parameters of a function.
         TSParameterReference = { link = "Fg" }, -- For references to parameters of a function.
-        TSProperty = { link = "Green" },    -- Same as `TSField`,accesing for struct members in C.
-        TSPunctBracket = { link = "Fg" },   -- For brackets and parens.
-        TSPunctDelimiter = { link = "Grey" }, -- For delimiters ie: `.`
-        TSPunctSpecial = { link = "Blue" }, -- For special punctutation that does not fall in the catagories before.
+        TSProperty = { link = "Green" },        -- Same as `TSField`,accesing for struct members in C.
+        TSPunctBracket = { link = "Fg" },       -- For brackets and parens.
+        TSPunctDelimiter = { link = "Grey" },   -- For delimiters ie: `.`
+        TSPunctSpecial = { link = "Blue" },     -- For special punctutation that does not fall in the catagories before.
         TSRepeat = { link = "Red" },
-        TSStrike = { link = "Grey" },       -- For strikethrough text.
+        TSStrike = { link = "Grey" },           -- For strikethrough text.
         TSString = { link = "Aqua" },
-        TSStringEscape = { link = "Green" }, -- For escape characters within a string.
-        TSStringRegex = { link = "Green" }, -- For regexes.
+        TSStringEscape = { link = "Green" },    -- For escape characters within a string.
+        TSStringRegex = { link = "Green" },     -- For regexes.
         TSStroung = { bold = true },
         TSStructure = { link = "Blue" },
-        TSSymbol = { link = "Fg" },      -- For identifiers referring to symbols or atoms.
-        TSTag = { link = "Orange" },     -- Tags like html tag names.
+        TSSymbol = { link = "Fg" },          -- For identifiers referring to symbols or atoms.
+        TSTag = { link = "Orange" },         -- Tags like html tag names.
         TSTagDelimiter = { link = "Green" }, -- Tag delimiter like `<` `>` `/`
-        TSText = { link = "Green" },     -- For strings considered text in a markup language.
-        TSType = { link = "Yellow" },    -- For types.
+        TSText = { link = "Green" },         -- For strings considered text in a markup language.
+        TSType = { link = "Yellow" },        -- For types.
         TSTypeBuiltin = { link = "Yellow" }, -- For builtin types.
-        TSURI = { link = "markdownUrl" }, -- Any URI like a link or email.
+        TSURI = { link = "markdownUrl" },    -- Any URI like a link or email.
         TSUnderline = { underline = true },
         TSVariable = { link = "Fg" },
         TSVariableBuiltin = { link = "Blue" },
