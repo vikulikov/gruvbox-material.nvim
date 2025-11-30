@@ -723,9 +723,9 @@ function groups.get(contrast)
         IlluminatedWordWrite = { link = "DiffDelete" },
 
         -- hrsh7th/nvim-cmp
-        CmpItemAbbrDeprecated = { fg = colors.grey1, strikethrough = true, bg = colors.bg0 },
-        CmpItemAbbrMatch = { fg = colors.purple, bold = true, bg = colors.bg0 },
-        CmpItemAbbrMatchFuzzy = { link = "CmpItemAbbrMatch", bg = colors.bg0 },
+        CmpItemAbbrDeprecated = { fg = colors.grey1, strikethrough = true },
+        CmpItemAbbrMatch = { fg = colors.purple, bold = true },
+        CmpItemAbbrMatchFuzzy = { link = "CmpItemAbbrMatch" },
         CmpItemMenu = { fg = colors.grey2 },
         CmpItemKindField = { fg = colors.blue, bg = colors.bg0 },
         CmpItemKindProperty = { link = "CmpItemKindField", bg = colors.bg0 },
