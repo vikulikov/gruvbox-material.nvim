@@ -150,10 +150,10 @@ function groups.get(contrast)
         Title = { fg = colors.orange, bold = true },         -- titles for output from ":set all", ":autocmd" etc.
 
         -- Popup menu
-        Pmenu = { fg = colors.fg1, bg = colors.bg0 },    -- normal item
-        PmenuSel = { fg = colors.bg3, bg = colors.bg0 }, -- selected item
-        PmenuSbar = { bg = colors.bg0 },                 -- scrollbar
-        PmenuThumb = { bg = colors.bg0 },                -- Thumb of the scrollbar
+        Pmenu = { fg = colors.fg1, bg = colors.bg0 }, -- normal item
+        PmenuSel = { fg = colors.bg3 },               -- selected item
+        PmenuSbar = { bg = colors.bg0 },              -- scrollbar
+        PmenuThumb = { bg = colors.bg0 },             -- Thumb of the scrollbar
         PmenuKind = { fg = colors.yellow, bg = colors.bg0 },
         PmenuExtra = { fg = colors.fg0, bg = colors.bg0 },
 
