@@ -150,12 +150,12 @@ function groups.get(contrast)
         Title = { fg = colors.orange, bold = true },         -- titles for output from ":set all", ":autocmd" etc.
 
         -- Popup menu
-        Pmenu = { fg = colors.fg1, bg = colors.bg3 },      -- normal item
-        PmenuSel = { fg = colors.bg3, bg = colors.grey2 }, -- selected item
-        PmenuSbar = { bg = colors.bg3 },                   -- scrollbar
-        PmenuThumb = { bg = colors.grey0 },                -- Thumb of the scrollbar
-        PmenuKind = { fg = colors.yellow, bg = colors.bg3 },
-        PmenuExtra = { fg = colors.fg0, bg = colors.bg3 },
+        Pmenu = { fg = colors.fg1, bg = colors.bg0 },    -- normal item
+        PmenuSel = { fg = colors.bg3, bg = colors.bg0 }, -- selected item
+        PmenuSbar = { bg = colors.bg0 },                 -- scrollbar
+        PmenuThumb = { bg = colors.bg0 },                -- Thumb of the scrollbar
+        PmenuKind = { fg = colors.yellow, bg = colors.bg0 },
+        PmenuExtra = { fg = colors.fg0, bg = colors.bg0 },
 
         Normal = { fg = colors.fg0, bg = colors.bg0 }, -- normal text
         NormalNC = { link = "Normal" },
@@ -723,35 +723,35 @@ function groups.get(contrast)
         IlluminatedWordWrite = { link = "DiffDelete" },
 
         -- hrsh7th/nvim-cmp
-        CmpItemAbbrDeprecated = { fg = colors.grey1, strikethrough = true },
-        CmpItemAbbrMatch = { fg = colors.purple, bold = true },
-        CmpItemAbbrMatchFuzzy = { link = "CmpItemAbbrMatch" },
-        CmpItemMenu = { fg = colors.grey2 },
-        CmpItemKindField = { fg = colors.blue },
-        CmpItemKindProperty = { link = "CmpItemKindField" },
-        CmpItemKindEvent = { link = "CmpItemKindField" },
-        CmpItemKindText = { fg = colors.grey1 },
-        CmpItemKindEnum = { fg = colors.red },
-        CmpItemKindKeyword = { link = "CmpItemKindEnum" },
-        CmpItemKindConstant = { fg = colors.purple },
-        CmpItemKindConstructor = { link = "CmpItemKindConstant" },
-        CmpItemKindReference = { link = "CmpItemKindConstant" },
-        CmpItemKindFunction = { fg = colors.yellow },
-        CmpItemKindStruct = { link = "CmpItemKindFunction" },
-        CmpItemKindClass = { link = "CmpItemKindFunction" },
-        CmpItemKindModule = { link = "CmpItemKindFunction" },
-        CmpItemKindOperator = { link = "CmpItemKindFunction" },
-        CmpItemKindVariable = { fg = colors.aqua },
-        CmpItemKindFile = { link = "CmpItemKindVariable" },
-        CmpItemKindUnit = { fg = colors.green },
-        CmpItemKindSnippet = { link = "CmpItemKindUnit" },
-        CmpItemKindFolder = { link = "CmpItemKindUnit" },
-        CmpItemKindMethod = { fg = colors.blue },
-        CmpItemKindValue = { link = "CmpItemKindMethod" },
-        CmpItemKindEnumMember = { link = "CmpItemKindMethod" },
-        CmpItemKindInterface = { fg = colors.orange },
-        CmpItemKindColor = { link = "CmpItemKindInterface" },
-        CmpItemKindTypeParameter = { link = "CmpItemKindInterface" },
+        CmpItemAbbrDeprecated = { fg = colors.grey1, strikethrough = true, bg = colors.bg0 },
+        CmpItemAbbrMatch = { fg = colors.purple, bold = true, bg = colors.bg0 },
+        CmpItemAbbrMatchFuzzy = { link = "CmpItemAbbrMatch", bg = colors.bg0 },
+        CmpItemMenu = { fg = colors.grey2, bg = colors.bg0 },
+        CmpItemKindField = { fg = colors.blue, bg = colors.bg0 },
+        CmpItemKindProperty = { link = "CmpItemKindField", bg = colors.bg0 },
+        CmpItemKindEvent = { link = "CmpItemKindField", bg = colors.bg0 },
+        CmpItemKindText = { fg = colors.grey1, bg = colors.bg0 },
+        CmpItemKindEnum = { fg = colors.red, bg = colors.bg0 },
+        CmpItemKindKeyword = { link = "CmpItemKindEnum", bg = colors.bg0 },
+        CmpItemKindConstant = { fg = colors.purple, bg = colors.bg0 },
+        CmpItemKindConstructor = { link = "CmpItemKindConstant", bg = colors.bg0 },
+        CmpItemKindReference = { link = "CmpItemKindConstant", bg = colors.bg0 },
+        CmpItemKindFunction = { fg = colors.yellow, bg = colors.bg0 },
+        CmpItemKindStruct = { link = "CmpItemKindFunction", bg = colors.bg0 },
+        CmpItemKindClass = { link = "CmpItemKindFunction", bg = colors.bg0 },
+        CmpItemKindModule = { link = "CmpItemKindFunction", bg = colors.bg0 },
+        CmpItemKindOperator = { link = "CmpItemKindFunction", bg = colors.bg0 },
+        CmpItemKindVariable = { fg = colors.aqua, bg = colors.bg0 },
+        CmpItemKindFile = { link = "CmpItemKindVariable", bg = colors.bg0 },
+        CmpItemKindUnit = { fg = colors.green, bg = colors.bg0 },
+        CmpItemKindSnippet = { link = "CmpItemKindUnit", bg = colors.bg0 },
+        CmpItemKindFolder = { link = "CmpItemKindUnit", bg = colors.bg0 },
+        CmpItemKindMethod = { fg = colors.blue, bg = colors.bg0 },
+        CmpItemKindValue = { link = "CmpItemKindMethod", bg = colors.bg0 },
+        CmpItemKindEnumMember = { link = "CmpItemKindMethod", bg = colors.bg0 },
+        CmpItemKindInterface = { fg = colors.orange, bg = colors.bg0 },
+        CmpItemKindColor = { link = "CmpItemKindInterface", bg = colors.bg0 },
+        CmpItemKindTypeParameter = { link = "CmpItemKindInterface", bg = colors.bg0 },
 
         -- Saghen/blink.cmp
         BlinkCmpLabelMatch = { fg = colors.green, bold = true },
