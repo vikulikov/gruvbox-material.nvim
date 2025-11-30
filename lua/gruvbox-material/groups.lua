@@ -730,7 +730,7 @@ function groups.get(contrast)
         CmpItemKindField = { fg = colors.blue, bg = colors.bg0 },
         CmpItemKindProperty = { link = "CmpItemKindField", bg = colors.bg0 },
         CmpItemKindEvent = { link = "CmpItemKindField", bg = colors.bg0 },
-        CmpItemKindText = { fg = colors.grey1, bg = colors.bg0 },
+        CmpItemKindText = { fg = colors.grey1 },
         CmpItemKindEnum = { fg = colors.red, bg = colors.bg0 },
         CmpItemKindKeyword = { link = "CmpItemKindEnum", bg = colors.bg0 },
         CmpItemKindConstant = { fg = colors.purple, bg = colors.bg0 },
