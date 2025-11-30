@@ -112,7 +112,7 @@ function groups.get(contrast)
         lCursor = { link = "Cursor" },                         -- the character under the cursor
         CursorIM = { link = "Cursor" },
 
-        WinBar = { bg = colors.bg0 },
+        WinBar = { fg = colors.fg2, bg = colors.bg0 },
 
         CursorLine = { bg = colors.bg1 },
         CursorColumn = { bg = colors.bg1 },
